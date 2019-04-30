@@ -4,17 +4,25 @@ R：查看，改变寄存器中的内容
 
 ![-r_demo](https://raw.githubusercontent.com/JIANGLY33/Learning_AssemblyLanguage/master/pictures/-r_demo.png)
 
+​		    (先用R命令查看所有寄存器的情况，再用R修改AX寄存器的值，再查看AX寄存器)
+
 D：查看内存中的内容
 
 ![-d_demo](https://raw.githubusercontent.com/JIANGLY33/Learning_AssemblyLanguage/master/pictures/-d_demo.png)
+
+​		    (查看076A:0000内存单元开始的内容)
 
 E：改写内存中的内容
 
 ![-e_demo](https://raw.githubusercontent.com/JIANGLY33/Learning_AssemblyLanguage/master/pictures/-e_demo.png)
 
+​		    (修改了076A:0000内存单元开始的四个字节的内存单元的内容)
+
 U：将内存中的机器语言反汇编成汇编指令
 
 ![-u_demo](https://raw.githubusercontent.com/JIANGLY33/Learning_AssemblyLanguage/master/pictures/-u_demo.png)
+
+​		       (查看076C:0000开头的地址处存储的指令，U后面的地址必须是cs寄存器所在的段)
 
 T：执行一条指令
 
@@ -37,3 +45,5 @@ P：执行循环指令，软件中断或子例程
 A：以汇编语言格式在内存中写入一条指令
 
 ![-a_demo](https://raw.githubusercontent.com/JIANGLY33/Learning_AssemblyLanguage/master/pictures/-a_demo.png)
+
+​				   (将MOV AX,1指令写入076C:0000地址单元)
